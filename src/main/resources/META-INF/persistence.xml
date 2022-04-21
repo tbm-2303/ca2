@@ -21,14 +21,15 @@
             <property name="eclipselink.logging.parameters" value="true"/>
             
             <!-- In PRODUCTION the values below, will be overriden by utils.EMF_Creator -->
-            <property name="javax.persistence.jdbc.url" value="jdbc:mysql://localhost:3306/ca2?serverTimezone=UTC"/>
-            <property name="javax.persistence.jdbc.user" value="dev"/>
-            <property name="javax.persistence.jdbc.password" value="ax2"/>
-            
-        </properties>
-    </persistence-unit>
-    
-    <!-- Database for testing ONLY -->
+    <!--change database name!!!!!-->
+    <property name="javax.persistence.jdbc.url" value="jdbc:mysql://localhost:3306/ca2?serverTimezone=UTC"/>
+    <property name="javax.persistence.jdbc.user" value="dev"/>
+    <property name="javax.persistence.jdbc.password" value="ax2"/>
+
+</properties>
+</persistence-unit>
+
+<!-- Database for testing ONLY -->
     <persistence-unit name="puTest" transaction-type="RESOURCE_LOCAL">
         <!-- DO NOT RENAME THE PERSISTENCE UNIT -->
         <provider>org.eclipse.persistence.jpa.PersistenceProvider</provider>
